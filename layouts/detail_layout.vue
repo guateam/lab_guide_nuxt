@@ -5,9 +5,7 @@
       fixed
       temporary
     >
-      <v-list>
-        <v-list-item></v-list-item>
-      </v-list>
+      <AppDrawerContent></AppDrawerContent>
     </v-navigation-drawer>
     <v-app-bar
       extended
@@ -40,41 +38,19 @@
       </v-menu>
     </v-app-bar>
     <v-content
-      style="margin-top: -10vh;padding-left: 10%;padding-right: 10%;"
+      style="margin-top: -10vh"
     >
       <v-container>
-        <v-card>
-          <v-toolbar
-            flat
-          >
-            <v-toolbar-title>Title</v-toolbar-title>
-            <v-subheader>author:XXX</v-subheader>
-            <v-spacer></v-spacer>
-
-            <v-btn icon>
-              <v-icon>mdi-history</v-icon>
-            </v-btn>
-
-            <v-btn icon>
-              <v-icon>mdi-book-plus</v-icon>
-            </v-btn>
-
-            <v-btn icon>
-              <v-icon>mdi-dots-vertical</v-icon>
-            </v-btn>
-          </v-toolbar>
-          <v-divider></v-divider>
-          <v-card-text>
-            <nuxt />
-          </v-card-text>
-        </v-card>
+        <nuxt />
       </v-container>
     </v-content>
   </v-app>
 </template>
 
 <script>
+    import AppDrawerContent from "../components/AppDrawerContent";
     export default {
+        components: {AppDrawerContent},
         data(){
             return {
                 drawer:false,
