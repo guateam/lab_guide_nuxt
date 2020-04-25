@@ -1,6 +1,6 @@
 <template>
   <v-layout>
-    <v-flex class="text-center">
+    <v-flex class="text-center" style="height: 2000px">
       <img
         src="/v.png"
         alt="Vuetify.js"
@@ -17,3 +17,8 @@
     </v-flex>
   </v-layout>
 </template>
+<script>
+  export default {
+      layout:'detail_layout'
+  }
+</script>
