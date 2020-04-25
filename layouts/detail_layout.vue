@@ -18,7 +18,7 @@
       <v-app-bar-nav-icon @click.stop="drawer=!drawer"></v-app-bar-nav-icon>
       <v-spacer></v-spacer>
       <v-btn icon>
-        <v-icon>mdi-mail</v-icon>
+        <v-icon>mdi-message-text</v-icon>
       </v-btn>
       <v-menu
         v-model="menu"
@@ -32,9 +32,7 @@
             <v-icon>mdi-apps</v-icon>
           </v-btn>
         </template>
-        <v-card>
-          <v-card-title>Title</v-card-title>
-        </v-card>
+        <AppDropPanel></AppDropPanel>
       </v-menu>
     </v-app-bar>
     <v-content
@@ -49,8 +47,9 @@
 
 <script>
     import AppDrawerContent from "../components/AppDrawerContent";
+    import AppDropPanel from "../components/AppDropPanel";
     export default {
-        components: {AppDrawerContent},
+        components: {AppDropPanel, AppDrawerContent},
         data(){
             return {
                 drawer:false,
