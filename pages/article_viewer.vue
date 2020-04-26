@@ -11,7 +11,7 @@
         <v-subheader>author:XXX</v-subheader>
         <v-spacer></v-spacer>
 
-        <v-btn icon>
+        <v-btn icon to="/article_history" >
           <v-icon>mdi-history</v-icon>
         </v-btn>
 
@@ -28,9 +28,7 @@
         Test
       </v-card-text>
     </v-card>
-  </v-layout
-    justify-center
-    align-center>
+  </v-layout>
 </template>
 
 <script>
